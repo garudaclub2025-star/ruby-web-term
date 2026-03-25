@@ -9,7 +9,7 @@ require 'timeout'
 class TerminalApp
   # Security configuration
   BASE_DIR = File.expand_path(__dir__)
-  PROTECTED_FILES = ['app.rb', 'config.ru', 'Gemfile', 'Gemfile.lock', '.git', 'public', '.gemini', '.ruby-lsp']
+  PROTECTED_FILES = ['app.rb', 'config.ru', 'Procfile', 'Gemfile', 'Gemfile.lock', '.git', 'public', '.gemini', '.ruby-lsp']
   
   # Allow password via ENV for deployment readiness
   PASSWORD = ENV['TERMINAL_PASSWORD'] || "password"
